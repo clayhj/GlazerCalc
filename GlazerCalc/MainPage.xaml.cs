@@ -26,5 +26,14 @@ namespace GlazerCalc
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double width;
+            while (!double.TryParse(widthInput, out width))
+            {
+
+            }
+        }
     }
 }
