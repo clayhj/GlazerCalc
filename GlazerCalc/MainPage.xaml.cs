@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
@@ -105,7 +106,7 @@ namespace GlazerCalc
 
         private void widthInput_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(e.Key.ToString(), "[0-9.]"))
+            if (Regex.IsMatch(e.Key.ToString(), "[0-9.]"))
             {
                 e.Handled = false;
             }
@@ -117,7 +118,7 @@ namespace GlazerCalc
 
         private void heightInput_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(e.Key.ToString(), "[0-9.]"))
+            if (Regex.IsMatch(e.Key.ToString(), "[0-9.]"))
             {
                 e.Handled = false;
             }
