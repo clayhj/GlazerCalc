@@ -16,7 +16,7 @@
             <TextBox x:Name="heightInput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.158,-0.475" FontSize="24" Width="150" Height="40" Margin="0,0,0,20" KeyDown="heightInput_KeyDown"/>
             <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Tint:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="24" Margin="464,0,463,20"/>
             <ComboBox x:Name="tintComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,20" Width="150" Height="37"/>
-            <TextBlock x:Name="amountValueDisplay" TextWrapping="Wrap" Text="1" Width="40" Height="30" Margin="482,0" TextAlignment="Center" FontSize="18"/>
+            <TextBlock x:Name="amountValueDisplay" TextWrapping="Wrap" Text="1" Margin="428,0,427,0" TextAlignment="Center" FontSize="18"/>
             <Slider x:Name="amountSlider" Width="150" Margin="402,0,402,30" Minimum="1" Maximum="10" Value="0" ValueChanged="Slider_ValueChanged" Height="40"/>
             <Button x:Name="calculateButton" Content="Submit" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="40" FontSize="24" Click="Button_Click"/>
         </StackPanel>

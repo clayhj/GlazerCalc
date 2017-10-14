@@ -101,7 +101,7 @@ namespace GlazerCalc
 
         private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            amountValueDisplay.Text = amountSlider.Value.ToString();
+            amountValueDisplay.Text = String.Format("{0} Window(s)", amountSlider.Value.ToString());
         }
 
         private void widthInput_KeyDown(object sender, KeyRoutedEventArgs e)
