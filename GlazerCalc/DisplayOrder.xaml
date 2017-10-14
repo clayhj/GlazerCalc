@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="GlazerCalc.DisplayOrder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GlazerCalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Left" Height="620" Margin="10,10,0,0" VerticalAlignment="Top" Width="1004">
+            <TextBlock TextWrapping="Wrap" Text="Glazer Calculator" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.393,0.412" HorizontalAlignment="Center" Margin="0,20,0,30"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Width:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0" FontWeight="Bold"/>
+            <TextBlock x:Name="widthDisplay" TextWrapping="Wrap" Text="Width Display" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0" FontWeight="Bold"/>
+            <TextBlock x:Name="heightDisplay" TextWrapping="Wrap" Text="Height Display" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" Text="Wood Frame Length:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,-2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="woodLengthDisplay" TextWrapping="Wrap" Text="Wood Frame Length Display" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" Text="Glass Area:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="glassAreaDisplay" TextWrapping="Wrap" Text="Glass Area Display" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Tint:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="464,0,463,0" FontWeight="Bold"/>
+            <TextBlock x:Name="tintDisplay" TextWrapping="Wrap" Text="Tint Display" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,1,15" HorizontalAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" Text="Amount:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="amountDisplay" TextWrapping="Wrap" Text="Amount Display:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,30" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="dateDisplay" TextWrapping="Wrap" Text="Date Display" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="20" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

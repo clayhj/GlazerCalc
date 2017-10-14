@@ -8,11 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="346,10,0,0" TextWrapping="Wrap" Text="Glazer Calculator" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" RenderTransformOrigin="0.393,0.412"/>
-        <TextBlock HorizontalAlignment="Left" Margin="346,212,0,0" TextWrapping="Wrap" Text="Width:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" Margin="346,354,0,0" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="36"/>
-        <TextBox x:Name="widthInput" HorizontalAlignment="Left" Margin="529,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.158,-0.475" FontSize="36" Width="200" Height="60"/>
-        <TextBox x:Name="heightInput" HorizontalAlignment="Left" Margin="529,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.158,-0.475" FontSize="36" Width="200" Height="60"/>
-        <Button x:Name="calculateButton" Content="Submit" HorizontalAlignment="Left" Margin="421,514,0,0" VerticalAlignment="Top" Width="200" Height="50" FontSize="24" Click="Button_Click"/>
+        <StackPanel HorizontalAlignment="Left" Height="620" Margin="10,10,0,0" VerticalAlignment="Top" Width="1004">
+            <TextBlock TextWrapping="Wrap" Text="Glazer Calculator" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.393,0.412" HorizontalAlignment="Center" Margin="0,18,0,35"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Width:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="24" Margin="0,0,0,20"/>
+            <TextBox x:Name="widthInput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.158,-0.475" FontSize="24" Width="150" Height="40" Margin="0,0,0,20" Background="#66FFFFFF" KeyDown="widthInput_KeyDown"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="24" Margin="0,0,0,20"/>
+            <TextBox x:Name="heightInput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.158,-0.475" FontSize="24" Width="150" Height="40" Margin="0,0,0,20" KeyDown="heightInput_KeyDown"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Tint:" VerticalAlignment="Top" RenderTransformOrigin="-0.232,-6.32" FontSize="24" Margin="464,0,463,20"/>
+            <ComboBox x:Name="tintComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,20" Width="150" Height="37"/>
+            <TextBlock x:Name="amountValueDisplay" TextWrapping="Wrap" Text="1" Width="40" Height="30" Margin="482,0" TextAlignment="Center" FontSize="18"/>
+            <Slider x:Name="amountSlider" Width="150" Margin="402,0,402,30" Minimum="1" Maximum="10" Value="0" ValueChanged="Slider_ValueChanged" Height="40"/>
+            <Button x:Name="calculateButton" Content="Submit" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="40" FontSize="24" Click="Button_Click"/>
+        </StackPanel>
     </Grid>
 </Page>
